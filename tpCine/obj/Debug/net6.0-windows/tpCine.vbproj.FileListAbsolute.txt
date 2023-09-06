@@ -1,0 +1,17 @@
+C:\Users\duart\source\repos\tpCine\tpCine\bin\Debug\net6.0-windows\tpCine.exe
+C:\Users\duart\source\repos\tpCine\tpCine\bin\Debug\net6.0-windows\tpCine.deps.json
+C:\Users\duart\source\repos\tpCine\tpCine\bin\Debug\net6.0-windows\tpCine.runtimeconfig.json
+C:\Users\duart\source\repos\tpCine\tpCine\bin\Debug\net6.0-windows\tpCine.dll
+C:\Users\duart\source\repos\tpCine\tpCine\bin\Debug\net6.0-windows\tpCine.pdb
+C:\Users\duart\source\repos\tpCine\tpCine\obj\Debug\net6.0-windows\tpCine.vbproj.AssemblyReference.cache
+C:\Users\duart\source\repos\tpCine\tpCine\obj\Debug\net6.0-windows\tpCine.Form1.resources
+C:\Users\duart\source\repos\tpCine\tpCine\obj\Debug\net6.0-windows\tpCine.vbproj.GenerateResource.cache
+C:\Users\duart\source\repos\tpCine\tpCine\obj\Debug\net6.0-windows\tpCine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\duart\source\repos\tpCine\tpCine\obj\Debug\net6.0-windows\tpCine.AssemblyInfoInputs.cache
+C:\Users\duart\source\repos\tpCine\tpCine\obj\Debug\net6.0-windows\tpCine.AssemblyInfo.vb
+C:\Users\duart\source\repos\tpCine\tpCine\obj\Debug\net6.0-windows\tpCine.vbproj.CoreCompileInputs.cache
+C:\Users\duart\source\repos\tpCine\tpCine\obj\Debug\net6.0-windows\tpCine.dll
+C:\Users\duart\source\repos\tpCine\tpCine\obj\Debug\net6.0-windows\refint\tpCine.dll
+C:\Users\duart\source\repos\tpCine\tpCine\obj\Debug\net6.0-windows\tpCine.pdb
+C:\Users\duart\source\repos\tpCine\tpCine\obj\Debug\net6.0-windows\tpCine.genruntimeconfig.cache
+C:\Users\duart\source\repos\tpCine\tpCine\obj\Debug\net6.0-windows\ref\tpCine.dll
