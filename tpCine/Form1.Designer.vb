@@ -35,13 +35,12 @@ Partial Class Form1
         cboSalas = New ComboBox()
         Label7 = New Label()
         txtCapacidad = New TextBox()
-        txtSeleccionada = New TextBox()
-        Label8 = New Label()
+        Label2 = New Label()
         SuspendLayout()
         ' 
         ' txtButacasLibres
         ' 
-        txtButacasLibres.Location = New Point(359, 297)
+        txtButacasLibres.Location = New Point(359, 310)
         txtButacasLibres.Name = "txtButacasLibres"
         txtButacasLibres.Size = New Size(121, 27)
         txtButacasLibres.TabIndex = 0
@@ -49,7 +48,7 @@ Partial Class Form1
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(85, 300)
+        Label1.Location = New Point(85, 313)
         Label1.Name = "Label1"
         Label1.Size = New Size(188, 20)
         Label1.TabIndex = 1
@@ -59,17 +58,17 @@ Partial Class Form1
         ' 
         lblTitle.AutoSize = True
         lblTitle.Font = New Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point)
-        lblTitle.Location = New Point(155, 58)
+        lblTitle.Location = New Point(241, 72)
         lblTitle.Name = "lblTitle"
-        lblTitle.Size = New Size(237, 37)
+        lblTitle.Size = New Size(70, 37)
         lblTitle.TabIndex = 2
-        lblTitle.Text = "Bienvenido al Cine"
+        lblTitle.Text = "Cine"
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(386, 601)
+        Button1.Location = New Point(386, 562)
         Button1.Name = "Button1"
-        Button1.Size = New Size(94, 29)
+        Button1.Size = New Size(94, 43)
         Button1.TabIndex = 3
         Button1.Text = "Salir"
         Button1.UseVisualStyleBackColor = True
@@ -77,16 +76,16 @@ Partial Class Form1
         ' cboButacas
         ' 
         cboButacas.FormattingEnabled = True
-        cboButacas.Location = New Point(359, 356)
+        cboButacas.Location = New Point(359, 369)
         cboButacas.Name = "cboButacas"
         cboButacas.Size = New Size(121, 28)
         cboButacas.TabIndex = 4
         ' 
         ' Button2
         ' 
-        Button2.Location = New Point(201, 601)
+        Button2.Location = New Point(201, 562)
         Button2.Name = "Button2"
-        Button2.Size = New Size(170, 29)
+        Button2.Size = New Size(170, 43)
         Button2.TabIndex = 5
         Button2.Text = "Buscar Butacas Libres"
         Button2.UseVisualStyleBackColor = True
@@ -94,7 +93,7 @@ Partial Class Form1
         ' lblButacas
         ' 
         lblButacas.AutoSize = True
-        lblButacas.Location = New Point(85, 364)
+        lblButacas.Location = New Point(85, 377)
         lblButacas.Name = "lblButacas"
         lblButacas.Size = New Size(137, 20)
         lblButacas.TabIndex = 6
@@ -103,7 +102,7 @@ Partial Class Form1
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(85, 484)
+        Label4.Location = New Point(85, 437)
         Label4.Name = "Label4"
         Label4.Size = New Size(106, 20)
         Label4.TabIndex = 7
@@ -111,7 +110,7 @@ Partial Class Form1
         ' 
         ' txtEstado
         ' 
-        txtEstado.Location = New Point(359, 484)
+        txtEstado.Location = New Point(359, 437)
         txtEstado.Name = "txtEstado"
         txtEstado.Size = New Size(121, 27)
         txtEstado.TabIndex = 8
@@ -119,7 +118,7 @@ Partial Class Form1
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(85, 182)
+        Label5.Location = New Point(85, 195)
         Label5.Name = "Label5"
         Label5.Size = New Size(170, 20)
         Label5.TabIndex = 10
@@ -128,7 +127,7 @@ Partial Class Form1
         ' cboSalas
         ' 
         cboSalas.FormattingEnabled = True
-        cboSalas.Location = New Point(359, 174)
+        cboSalas.Location = New Point(359, 187)
         cboSalas.Name = "cboSalas"
         cboSalas.Size = New Size(121, 28)
         cboSalas.TabIndex = 9
@@ -136,7 +135,7 @@ Partial Class Form1
         ' Label7
         ' 
         Label7.AutoSize = True
-        Label7.Location = New Point(85, 242)
+        Label7.Location = New Point(85, 255)
         Label7.Name = "Label7"
         Label7.Size = New Size(150, 20)
         Label7.TabIndex = 14
@@ -144,34 +143,27 @@ Partial Class Form1
         ' 
         ' txtCapacidad
         ' 
-        txtCapacidad.Location = New Point(359, 239)
+        txtCapacidad.Location = New Point(359, 252)
         txtCapacidad.Name = "txtCapacidad"
         txtCapacidad.Size = New Size(121, 27)
         txtCapacidad.TabIndex = 13
         ' 
-        ' txtSeleccionada
+        ' Label2
         ' 
-        txtSeleccionada.Location = New Point(359, 425)
-        txtSeleccionada.Name = "txtSeleccionada"
-        txtSeleccionada.Size = New Size(121, 27)
-        txtSeleccionada.TabIndex = 16
-        ' 
-        ' Label8
-        ' 
-        Label8.AutoSize = True
-        Label8.Location = New Point(85, 425)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(147, 20)
-        Label8.TabIndex = 15
-        Label8.Text = "Butaca seleccionada:"
+        Label2.AutoSize = True
+        Label2.Font = New Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point)
+        Label2.Location = New Point(236, 121)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(76, 19)
+        Label2.TabIndex = 17
+        Label2.Text = "Bienvenido"
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(580, 720)
-        Controls.Add(txtSeleccionada)
-        Controls.Add(Label8)
+        ClientSize = New Size(580, 707)
+        Controls.Add(Label2)
         Controls.Add(Label7)
         Controls.Add(txtCapacidad)
         Controls.Add(Label5)
@@ -204,6 +196,5 @@ Partial Class Form1
     Friend WithEvents cboSalas As ComboBox
     Friend WithEvents Label7 As Label
     Friend WithEvents txtCapacidad As TextBox
-    Friend WithEvents txtSeleccionada As TextBox
-    Friend WithEvents Label8 As Label
+    Friend WithEvents Label2 As Label
 End Class

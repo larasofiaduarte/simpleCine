@@ -7,7 +7,6 @@ Public Class Form1
     Dim Cine() As Boolean
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-
         For i As Integer = 0 To 3 Step 1
             cboSalas.Items.Add(i + 1)
         Next
@@ -18,6 +17,10 @@ Public Class Form1
         lblTitle.ForeColor = Color.Navy
 
         cboButacas.Enabled = False
+        txtCapacidad.Enabled = False
+        txtButacasLibres.Enabled = False
+        txtEstado.Enabled = False
+
 
     End Sub
 
@@ -27,7 +30,7 @@ Public Class Form1
 
         cboButacas.Enabled = True
 
-        crearCine()
+        Butacas()
 
     End Sub
 
@@ -38,47 +41,56 @@ Public Class Form1
 
     Sub crearCine()
         'definir dimensión del vector según lo seleccionado en ComboBox
+        Dim tamaño As Integer
         If cboSalas.SelectedIndex = 0 Then
 
-            ReDim Cine(29)
-            Butacas()
+            tamaño = 30
 
         ElseIf cboSalas.SelectedIndex = 1 Then
 
-            ReDim Cine(59)
-            Butacas()
+            tamaño = 60
 
         ElseIf cboSalas.SelectedIndex = 2 Then
 
-            ReDim Cine(84)
-            Butacas()
+            tamaño = 85
 
         Else
 
-            ReDim Cine(99)
-            Butacas()
+            tamaño = 100
 
         End If
+
+        ReDim Cine(tamaño - 1)
+
+        cargarArray()
+
     End Sub
 
-    Sub Butacas()
-        txtCapacidad.Text = Cine.Length
+    Sub cargarArray()
 
+        cboButacas.Items.Clear()
+
+        'cargar vector Cine con valores booleanos
+
+        Dim random As New Random()
+
+
+        For i As Integer = 0 To Cine.Length - 1 Step 1
+            Dim randomNumber As Integer = random.Next(2)
+            Cine(i) = (randomNumber = 1)
+        Next
+
+    End Sub
+
+    Sub cargarButacas()
         'cargar cantidad de butacas a un ComboBox según capacidad
         For i As Integer = 0 To Cine.Length - 1 Step 1
             cboButacas.Items.Add(i + 1)
         Next
+    End Sub
 
-
-        'cargar vector Cine con valores booleanos
-
-        For i As Integer = 0 To Cine.Length - 1 Step 1
-            If i Mod 2 = 0 Then
-                Cine(i) = False
-            Else
-                Cine(i) = True
-            End If
-        Next
+    Sub Butacas()
+        txtCapacidad.Text = Cine.Length
 
 
         'determinar butacas libres
@@ -95,17 +107,31 @@ Public Class Form1
         txtButacasLibres.Text = butacasLibres
 
 
+
+    End Sub
+
+    Private Sub cboSalas_Leave(sender As Object, e As EventArgs) Handles cboSalas.Leave
+
+        crearCine()
+        cargarArray()
+        cargarButacas()
+
+        txtCapacidad.Enabled = True
+        txtButacasLibres.Enabled = True
+        txtEstado.Enabled = True
+
+    End Sub
+
+    Private Sub cboButacas_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboButacas.SelectedIndexChanged
+
         'Mostrar si la butaca está disponible
 
         If cboButacas.SelectedIndex = -1 Then
             txtEstado.Text = " "
-            txtSeleccionada.Text = "No Seleccionado"
         ElseIf Cine(cboButacas.SelectedIndex + 1) = False Then
             txtEstado.Text = "Disponible"
-            txtSeleccionada.Text = cboButacas.SelectedIndex + 1
         Else
             txtEstado.Text = "Ocupado"
-            txtSeleccionada.Text = cboButacas.SelectedIndex + 1
         End If
     End Sub
 End Class
