@@ -13,8 +13,14 @@ Public Class Form1
 
 
         'estilos
-        lblTitle.Font = New Font("Arial", 16, FontStyle.Bold Or FontStyle.Italic)
+        lblTitle.Font = New Font("Arial", 24, FontStyle.Bold Or FontStyle.Italic)
         lblTitle.ForeColor = Color.Navy
+
+        Dim backColor As Color = Color.FromArgb(192, 192, 255)
+        Me.BackColor = backColor
+
+
+
 
         cboButacas.Enabled = False
         txtCapacidad.Enabled = False
@@ -133,6 +139,10 @@ Public Class Form1
         Else
             txtEstado.Text = "Ocupado"
         End If
+    End Sub
+
+    Private Sub lblTitle_Click(sender As Object, e As EventArgs) Handles lblTitle.Click
+
     End Sub
 End Class
 

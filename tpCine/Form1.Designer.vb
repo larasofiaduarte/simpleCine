@@ -57,10 +57,10 @@ Partial Class Form1
         ' lblTitle
         ' 
         lblTitle.AutoSize = True
-        lblTitle.Font = New Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point)
-        lblTitle.Location = New Point(241, 72)
+        lblTitle.Font = New Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point)
+        lblTitle.Location = New Point(223, 67)
         lblTitle.Name = "lblTitle"
-        lblTitle.Size = New Size(70, 37)
+        lblTitle.Size = New Size(102, 54)
         lblTitle.TabIndex = 2
         lblTitle.Text = "Cine"
         ' 
